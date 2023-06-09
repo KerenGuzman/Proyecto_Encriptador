@@ -6,7 +6,10 @@ var cambiosRealizados = [];
 
 boton.addEventListener("click", encriptar);
 
-/*function encriptar() {
+/*
+OTRA FORMA
+
+function encriptar() {
     var texto = textArea.value;
     var textoT = "";
     for (var i = 0; i < texto.length; i++) {
