@@ -6,65 +6,6 @@ var cambiosRealizados = [];
 
 boton.addEventListener("click", encriptar);
 
-/*
-OTRA FORMA
-
-function encriptar() {
-    var texto = textArea.value;
-    var textoT = "";
-    for (var i = 0; i < texto.length; i++) {
-        if (texto[i] == "a") {
-            textoT += " area ";
-        } else if (texto[i] == "e") {
-            textoT += " enter ";
-        } else if (texto[i] == "i") {
-            textoT += " intro ";
-        } else if (texto[i] == "o") {
-            textoT += " olto ";
-        } else if (texto[i] == "u") {
-            textoT += " unta ";
-        } else {
-            textoT += texto[i];
-        }
-
-    }
-    cambiosRealizados.push(textoT.slice()); // Agregar una copia del cambio al array
-
-    textArea2.value = cambiosRealizados.join(', '); // Mostrar todos los cambios en el área de texto
-    console.log(cambiosRealizados);
-}
-
-boton2.addEventListener("click", desencriptar);
-
-function desencriptar() {
-    var textoDesencriptado = textArea2.value;
-
-    for (var i = 0; i < cambiosRealizados.length; i++) {
-        var cambio = cambiosRealizados[i];
-        var regex = /area|enter|ilo|olto|unta/g;
-
-        textoDesencriptado = textoDesencriptado.replace(regex, function(matched) {
-            switch (matched) {
-                case "area":
-                    return "a";
-                case "enter":
-                    return "e";
-                case "ilo":
-                    return "i";
-                case "olto":
-                    return "o";
-                case "unta":
-                    return "u";
-                default:
-                    return matched;
-            }
-        });
-    }
-
-    textArea.value = textoDesencriptado;
-}*/
-
-
 function encriptar() {
     var vocales = {
         "a": "1",
