@@ -30,7 +30,6 @@ function encriptar() {
     } else {
         textoT = "solo minusculas";
     }
-
     textArea2.value = textoT; // Mostrar todos los cambios en el área de texto
 
 }
